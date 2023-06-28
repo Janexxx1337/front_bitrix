@@ -18,7 +18,7 @@
             <li>Бесплатные часы на внедрение</li>
         </ul>
         <button class="hero__button">
-            <a href="https://b24-51dzyg.bitrix24site.ru/crm_form_lkzz2/"> Оставить заявку</a>
+            <a href="#"> Оставить заявку</a>
         </button>
     </div>
     <div class="hero__images">
@@ -91,18 +91,59 @@
 </section>
 
 <section class="profit content">
-  <div class="profit-content">
-      <h1 class="profit__title">
-          Увеличение прибыли
-          в первые месяцы
-          после внедрения CRM
-      </h1>
-      <p>
-          Анализируем специфику работы вашей компании, даём практические советы по улучшению. Анализируем специфику работы вашей компании, даём практические
-      </p>
-  </div>
+<div class="profit__wrapper">
+    <div class="profit-content">
+        <h1 class="profit__title">
+            Увеличение прибыли
+            <span>в первые месяцы</span>
+            после внедрения CRM
+        </h1>
+        <p>
+            Анализируем специфику работы вашей компании, даём практические советы по улучшению. Анализируем специфику
+            работы вашей компании, даём практические
+        </p>
+    </div>
     <div class="profit-img">
         <img src="./images/diagram.png" alt="">
+    </div>
+
+</div>
+    <div class="profit-line">
+</div>
+    <div class="profit__goals">
+        <div class="profit__goal">
+            <div class="profit-discount">
+                на 35%
+            </div>
+            <div class="profit-text">
+                Повышение LTV и выше
+            </div>
+        </div>
+        <div class="profit__goal">
+            <div class="profit-discount">
+                на 50 %
+            </div>
+            <div class="profit-text conv">
+                Повышение конверсии
+                из лида в первую продажу
+            </div>
+        </div>
+        <div class="profit__goal">
+            <div class="profit-discount">
+                от 30%
+            </div>
+            <div class="profit-text">
+                Конверсии из лида в первую продажу
+            </div>
+        </div>
+        <div class="profit__goal">
+            <div class="profit-discount">
+                на 20%
+            </div>
+            <div class="profit-text">
+                Снижение расходов на рекламу
+            </div>
+        </div>
     </div>
 </section>
 
@@ -113,6 +154,10 @@
         box-sizing: border-box;
         padding: 0;
         margin: 0;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     body {
@@ -213,7 +258,7 @@
 
     .image--telecom {
         top: 0;
-        left: 210px;
+        left: 100px;
         z-index: 20;
     }
 
@@ -293,15 +338,77 @@
         font-weight: 500;
         margin-top: 16px;
     }
-    
+
     .profit {
+        margin-top: 120px;
+        padding: 0 100px;
         background-color: #fff;
         border: 1px solid #FFFFFF;
-    }
-    .profit-content {
-        max-width: 600px;
+        margin-bottom: 200px;
     }
 
+    .profit__wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .profit-content {
+        max-width: 600px;
+        margin-top: 67px;
+    }
+
+    .profit__title {
+        color: #3B3535;
+        font-size: 48px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        line-height: 103%;
+    }
+
+    .profit p {
+        color: #787070;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 45px;
+        margin-bottom: 60px;
+    }
+
+.profit-line {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+    .profit__title span {
+        color: #00CFFC;
+    }
+
+    .profit__goals {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .profit-discount {
+        color: #414141;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 132.7%;
+        letter-spacing: -0.8px;
+        margin-top: 30px;
+    }
+
+    .profit-text {
+        max-width: 220px;
+        color: #656565;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 125.2%;
+        letter-spacing: -0.36px;
+        margin-top: 13px;
+
+    }
 
     @media (max-width: 1280px) {
         .hero {
